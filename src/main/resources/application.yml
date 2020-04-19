@@ -1,0 +1,67 @@
+logging:
+  level:
+    root: INFO
+
+spring:
+  datasource:
+    tomcat:
+      initSQL: SET NAMES utf8mb4 COLLATE utf8mb4_unicode_ci
+    druid:
+      username: root
+      password: root
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/admin_test?useUnicode=true&characterEncoding=utf8&useSSL=false
+      initial-size: 5
+      min-idle: 5
+      max-active: 20
+      max-wait: 60000
+      pool-prepared-statements: true
+      max-pool-prepared-statement-per-connection-size: 20
+      filters: ""
+      web-stat-filter:
+        enabled: true
+        url-pattern: /*
+        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"
+        session-stat-enable: false
+        session-stat-max-count: 1000
+        principal-session-name: admin
+        principal-cookie-name: admin
+        profile-enable: true
+      stat-view-servlet:
+        enabled: true
+        url-pattern: /druid/*
+        reset-enable: true
+        login-username: admin
+        login-password: 1314dafa9900
+        allow: "127.0.0.1/24,10.10.0.1/16"
+  redis:
+    host: localhost
+    port: 6379
+    database: 6
+    #    password: 1234qwer
+    timeout: 5000ms
+
+  #    lettuce:
+  #      pool:
+  #        max-wait: 100000ms
+  #        max-idle: 10
+  #        max-active: 100
+  mvc:
+    throw-exception-if-no-handler-found: true
+  resources:
+    add-mappings: false
+
+mybatis:
+  type-aliases-package: com.huifer.baseweb.model.db
+  mapper-locations: classpath:mapper/*Mapper.xml
+  config-location: classpath:mybatis-config.xml
+
+log:
+  com.huifer.baseweb.mapper: debug
+
+
+server:
+  port: 9999
+  compression:
+    enabled: true
+    min-response-size: 1

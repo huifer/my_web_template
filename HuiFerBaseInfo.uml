@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.huifer.baseweb.base.HuiFerBaseInfo</OriginalElement>
+  <nodes>
+    <node x="1198.2566666666667" y="353.0">com.huifer.baseweb.redis.demo.HshRedisKeyImpl</node>
+    <node x="1488.1666666666665" y="172.0">com.huifer.baseweb.redis.IRedisCrudService</node>
+    <node x="980.2566666666667" y="353.0">com.huifer.baseweb.scheduling.demo.impl.IDemoSchedulingImpl</node>
+    <node x="16.0" y="172.0">com.huifer.baseweb.service.demo.IDemoService</node>
+    <node x="830.75" y="91.0">com.huifer.baseweb.scheduling.InProjectScheduling</node>
+    <node x="1032.75" y="172.0">lombok.extern.slf4j.Slf4j</node>
+    <node x="620.75" y="91.0">com.huifer.baseweb.service.IStatisticsService</node>
+    <node x="0.0" y="91.0">com.huifer.baseweb.service.IBusinessService</node>
+    <node x="1320.8058333333333" y="172.0">org.springframework.stereotype.Service</node>
+    <node x="178.0" y="172.0">org.springframework.beans.factory.annotation.Qualifier</node>
+    <node x="1578.2566666666667" y="353.0">com.huifer.baseweb.redis.demo.ValueRedisKeyImpl</node>
+    <node x="1384.2566666666667" y="353.0">com.huifer.baseweb.redis.demo.ListRedisKeyImpl</node>
+    <node x="683.8399999999999" y="0.0">com.huifer.baseweb.base.HuiFerBaseInfo</node>
+    <node x="272.6633333333332" y="353.0">com.huifer.baseweb.service.demo.impl.IDemoServiceImpl</node>
+    <node x="584.6699999999998" y="353.0">com.huifer.baseweb.redis.expire.ISetExpireForRedisImpl</node>
+    <node x="410.75" y="91.0">com.huifer.baseweb.redis.expire.ISetExpireForRedis</node>
+    <node x="846.75" y="172.0">com.huifer.baseweb.scheduling.demo.IDemoScheduling</node>
+    <node x="316.0" y="172.0">org.springframework.transaction.annotation.Transactional</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.huifer.baseweb.redis.expire.ISetExpireForRedisImpl" target="lombok.extern.slf4j.Slf4j">
+      <point x="0.0" y="-15.5" />
+      <point x="695.6699999999998" y="283.0" />
+      <point x="1054.25" y="283.0" />
+      <point x="-21.5" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.redis.demo.ListRedisKeyImpl" target="lombok.extern.slf4j.Slf4j">
+      <point x="-58.0" y="-15.5" />
+      <point x="1413.2566666666667" y="263.0" />
+      <point x="1097.25" y="263.0" />
+      <point x="21.5" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.service.demo.impl.IDemoServiceImpl" target="org.springframework.transaction.annotation.Transactional">
+      <point x="0.0" y="-15.5" />
+      <point x="359.6633333333332" y="263.0" />
+      <point x="391.0" y="263.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.scheduling.demo.impl.IDemoSchedulingImpl" target="com.huifer.baseweb.scheduling.demo.IDemoScheduling">
+      <point x="-66.0" y="-15.5" />
+      <point x="1013.2566666666667" y="263.0" />
+      <point x="929.75" y="263.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.service.IBusinessService" target="com.huifer.baseweb.base.HuiFerBaseInfo">
+      <point x="0.0" y="-15.5" />
+      <point x="87.0" y="51.0" />
+      <point x="699.6399999999999" y="51.0" />
+      <point x="-63.200000000000045" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.service.demo.impl.IDemoServiceImpl" target="lombok.extern.slf4j.Slf4j">
+      <point x="34.80000000000001" y="-15.5" />
+      <point x="394.4633333333332" y="273.0" />
+      <point x="1039.9166666666665" y="273.0" />
+      <point x="-35.83333333333337" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.redis.demo.HshRedisKeyImpl" target="com.huifer.baseweb.redis.IRedisCrudService">
+      <point x="55.33333333333326" y="-15.5" />
+      <point x="1336.59" y="333.0" />
+      <point x="1518.5" y="333.0" />
+      <point x="-60.66666666666674" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.service.IStatisticsService" target="com.huifer.baseweb.base.HuiFerBaseInfo">
+      <point x="0.0" y="-15.5" />
+      <point x="715.75" y="71.0" />
+      <point x="762.8399999999999" y="71.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.service.demo.impl.IDemoServiceImpl" target="com.huifer.baseweb.service.demo.IDemoService">
+      <point x="-69.60000000000002" y="-15.5" />
+      <point x="290.06333333333316" y="333.0" />
+      <point x="87.0" y="333.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.redis.expire.ISetExpireForRedisImpl" target="com.huifer.baseweb.redis.expire.ISetExpireForRedis">
+      <point x="-74.0" y="-15.5" />
+      <point x="621.6699999999998" y="263.0" />
+      <point x="505.75" y="263.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.scheduling.demo.impl.IDemoSchedulingImpl" target="lombok.extern.slf4j.Slf4j">
+      <point x="0.0" y="-15.5" />
+      <point x="1079.2566666666667" y="283.0" />
+      <point x="1068.5833333333333" y="283.0" />
+      <point x="-7.1666666666667425" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.redis.demo.HshRedisKeyImpl" target="lombok.extern.slf4j.Slf4j">
+      <point x="-55.33333333333326" y="-15.5" />
+      <point x="1225.9233333333334" y="273.0" />
+      <point x="1082.9166666666667" y="273.0" />
+      <point x="7.1666666666667425" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.redis.demo.ValueRedisKeyImpl" target="com.huifer.baseweb.redis.IRedisCrudService">
+      <point x="60.66666666666674" y="-15.5" />
+      <point x="1729.9233333333334" y="223.0" />
+      <point x="1639.8333333333335" y="223.0" />
+      <point x="60.66666666666674" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.service.demo.IDemoService" target="com.huifer.baseweb.service.IBusinessService">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.redis.demo.ValueRedisKeyImpl" target="org.springframework.stereotype.Service">
+      <point x="0.0" y="-15.5" />
+      <point x="1669.2566666666667" y="233.0" />
+      <point x="1414.3058333333333" y="233.0" />
+      <point x="42.5" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.redis.expire.ISetExpireForRedis" target="com.huifer.baseweb.base.HuiFerBaseInfo">
+      <point x="5.6843418860808015E-14" y="-15.5" />
+      <point x="505.75000000000006" y="61.0" />
+      <point x="731.24" y="61.0" />
+      <point x="-31.600000000000023" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.service.demo.impl.IDemoServiceImpl" target="org.springframework.stereotype.Service">
+      <point x="69.60000000000002" y="-15.5" />
+      <point x="429.2633333333332" y="293.0" />
+      <point x="1329.3058333333333" y="293.0" />
+      <point x="-42.5" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.redis.demo.ListRedisKeyImpl" target="org.springframework.stereotype.Service">
+      <point x="0.0" y="-15.5" />
+      <point x="1471.2566666666667" y="253.0" />
+      <point x="1397.3058333333333" y="253.0" />
+      <point x="25.5" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.redis.demo.ListRedisKeyImpl" target="com.huifer.baseweb.redis.IRedisCrudService">
+      <point x="58.0" y="-15.5" />
+      <point x="1529.2566666666667" y="333.0" />
+      <point x="1579.1666666666665" y="333.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.redis.demo.ValueRedisKeyImpl" target="lombok.extern.slf4j.Slf4j">
+      <point x="-60.66666666666674" y="-15.5" />
+      <point x="1608.59" y="243.0" />
+      <point x="1111.5833333333333" y="243.0" />
+      <point x="35.83333333333326" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.scheduling.demo.IDemoScheduling" target="com.huifer.baseweb.scheduling.InProjectScheduling">
+      <point x="0.0" y="-15.5" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.service.demo.impl.IDemoServiceImpl" target="org.springframework.beans.factory.annotation.Qualifier">
+      <point x="-34.80000000000001" y="-15.5" />
+      <point x="324.86333333333323" y="323.0" />
+      <point x="237.0" y="323.0" />
+      <point x="0.0" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.scheduling.InProjectScheduling" target="com.huifer.baseweb.base.HuiFerBaseInfo">
+      <point x="0.0" y="-15.5" />
+      <point x="929.75" y="71.0" />
+      <point x="794.44" y="71.0" />
+      <point x="31.600000000000023" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.redis.demo.HshRedisKeyImpl" target="org.springframework.stereotype.Service">
+      <point x="0.0" y="-15.5" />
+      <point x="1281.2566666666667" y="323.0" />
+      <point x="1380.3058333333333" y="323.0" />
+      <point x="8.5" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.scheduling.demo.impl.IDemoSchedulingImpl" target="org.springframework.stereotype.Service">
+      <point x="66.0" y="-15.5" />
+      <point x="1145.2566666666667" y="313.0" />
+      <point x="1363.3058333333333" y="313.0" />
+      <point x="-8.5" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.redis.expire.ISetExpireForRedisImpl" target="org.springframework.stereotype.Service">
+      <point x="74.0" y="-15.5" />
+      <point x="769.6699999999998" y="303.0" />
+      <point x="1346.3058333333333" y="303.0" />
+      <point x="-25.5" y="15.5" />
+    </edge>
+    <edge source="com.huifer.baseweb.redis.IRedisCrudService" target="com.huifer.baseweb.base.HuiFerBaseInfo">
+      <point x="0.0" y="-15.5" />
+      <point x="1579.1666666666665" y="61.0" />
+      <point x="826.04" y="61.0" />
+      <point x="63.200000000000045" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="0.4946659180235822" x="880.5000000000001" y="192.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
